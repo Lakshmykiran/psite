@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <title>Login page</title>
+</head>
+<body style="background-color:#D3D3D3">
+        <fieldset>
+            <legend>User Information</legend>
+    <form action="create_user.php" method="post" enctype="application/x-www-form-urlencoded" >
+       <label for="username:">Username:</label> <input type="text" name ="username"id="username" placeholder="please input a username"size="25"minlength="3" maxlength="20"title="Input only letters"required="required"/> <br><br>
+       <label for="password:">Password:</label><input type="text" name="password" id="password" placeholder="please input a password" size="25" minlength="4" maxlength="20"title="Input only numbers"required="required">  <br><br> 
+       <label>Gender</label><br>
+       <input type="radio" name="female" value="true">male
+       <input type="radio" name="male" value="false">female<br>
+       <div>
+       <label for="bday">Enter your Birthday:</label>  <input type="date" id="bday"name="bday" value="mm-dd-yyyy"/>
+       <span class="validity"></span>
+    </div><br>
+       <label>Email:</label>
+       <input type="email" name="email" placeholder="Enter your e-mail here"size="25" /><br><br>
+  <div>
+       <input type="submit" value="Submit">
+    </div>
+    </form>  
+    </fieldset>
+</body>
+</html>
